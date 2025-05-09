@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores base */
+:root {
+    --color-primario: #1e3a5f;   /* Azul marino, como un azulejo de cerámica */
+    --color-secundario: #2c8e99; /* Azul turquesa suave */
+    --color-acento: #f0c04b;     /* Amarillo cálido, como los detalles en cerámica */
+    --color-fondo: #e0f7fa;      /* Azul pastel claro */
+    --color-texto: #333;
+    --color-claro: #f4f9fb;      /* Blanco roto */
+    --color-verde: #80cfa0;      /* Verde agua, suave y fresco */
+}
+
+/* Estructura general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+#container {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Cabecera */
+#header {
+    background-color: var(--color-primario);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: var(--color-secundario);
+    padding: 12px;
+    border-bottom: 4px solid var(--color-acento);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-acento);
+    color: #000;
+}
+
+/* Contenido principal */
+#content {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* Lateral */
+#lateral {
+    width: 25%;
+    background-color: var(--color-claro);
+    padding: 20px;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+/* Pie de página */
+#footer {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 0 0 8px 8px;
+    font-size: 0.9em;
+}
