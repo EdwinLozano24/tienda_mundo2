@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS t_usuarios (
   UNIQUE (email)
 ) ENGINE=InnoDB;
 
-INSERT INTO t_usuario VALUES(NULL, 'admin', 'admin', 'admin1@admin.com', 'contasena', 'admin', 'imagenes/admin.jpg');
+INSERT INTO t_usuarios VALUES(NULL, 'admin', 'admin', 'admin1@admin.com', 'contasena', 'admin', 'imagenes/admin.jpg');
 
 -- Tabla de pedidos
 CREATE TABLE IF NOT EXISTS t_pedidos (
